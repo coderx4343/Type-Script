@@ -31,29 +31,26 @@ d.disp();
 console.log(d); */
 
 //Indirect Inheridance
-class Root { 
-  str:string; 
+class Root {
+  str: string;
   branch: string;
-  fruit:number;
-  constructor(str:string,branch: string,fruit:number){
-    this.str=str;
-    this.branch=branch;
-    this.fruit=fruit;
+  fruit: number;
+  constructor(str: string, branch: string, fruit: number) {
+    this.str = str;
+    this.branch = branch;
+    this.fruit = fruit;
   }
-} 
+}
 
-class Child extends Root {} 
+class Child extends Root {}
 class Leaf extends Child {
   disp(): void {
-    console.log("message is "+this.str);
-    console.log("Branch is "+this.branch);
-    console.log("fruits are "+this.fruit+" in the tree");
+    console.log('message is ' + this.str);
+    console.log('Branch is ' + this.branch);
+    console.log('fruits are ' + this.fruit + ' in the tree');
   }
+}
 
-}  
-
-var obj = new Leaf("hello","Very big",45); 
+var obj = new Leaf('hello', 'Very big', 45);
 obj.disp();
-console.log(obj.str)
-
-
+console.log(obj.str);
